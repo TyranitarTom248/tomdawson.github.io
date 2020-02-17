@@ -1,9 +1,18 @@
-* {font-family: "Arial", "Helvetica", sans-serif;}
+* {font-family: "Arial", "Helvetica", sans-serif;
+    }
+body {background-color: aliceblue;
+color: black;
+transition: 1.0s;}
+
 h2 {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
 p, ul {border: 2px;
     border-style: solid;
 border-color: black;
-margin: 5px;}
+margin: 5px;
+background-color: rgb(138, 138, 155);}
 .center {text-align: center;}
-.ulcolor {background-color: rgb(240, 240, 240);}
-.pcolor {background-color: rgb(240, 240, 240);}
+#modeChanger {
+    height: 20px;
+    width: 20px;
+    }
+};

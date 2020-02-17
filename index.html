@@ -5,8 +5,10 @@
 <title>My Resume</title>
 </head>
 <body>
-    <section><h1 class="center">Thomas Dawson</h1>
-        <ul class="ulcolor">
+    <section><h1 class="center"><img id="modeChanger" src="https://lh3.googleusercontent.com/proxy/3cXPSQ6FMUe0p9rU725YIlgApNrfLJwTJHHd2JMTdTVNgXLpKX91e3T3g5hsSjuYlyRqF9Ki9gJBXWDisvw6MDMFAorc6H-Zk8KaSiPM_arg3B_pgk1Jl6vqZQ9m4q5MqUo4d0TDfmm6AC9F-x2j4-e2pvL9aE6BsBGZWIh0">
+        <br>
+        Thomas Dawson</h1>
+        <ul>
         <li>Phone: 330-831-8990</li>
         <li>Email: tdawson8@kent.edu</li>
         <li><a href="https://www.linkedin.com/in/thomas-dawson-51aa1315a/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png" width="25" height="20"></a></li>
@@ -14,27 +16,27 @@
         </section>
     <section>
         <h2 class="center">Objective</h2>
-        <ul class="ulcolor">
+        <ul>
         <li>Practice creativity in solving problems and accomplishing tasks.</li>
         <li>Seeking positions in cybersecurity, information technology, technology research, and/or game design.</li>
         </ul>
         </section>
     <section>
         <h2 class="center">Summary</h2>
-        <p class="pcolor">
+        <p>
             Experience in game design, cybersecurity, network engineering, and database management. Experience coding in HTML, PHP, CSS, Javascript, and Python. 
         </p>
         </section>
     <Section>
         <h2 class="center">Academic Accomplishments</h2>
-        <ul class="ulcolor">
+        <ul>
             <li>College: <a href="https://www.kent.edu">Kent State University</a>, Bachelor's Degree in Digital Science, 2020</li>
             <li>High School: <a href="http://www.united.k12.oh.us/">United Local Schools</a>, diploma with honors, consistent honor roll student, 2015</li>
         </ul>
         </Section>
     <section>
     <h2 class="center">Technical Skills and Languages</h2>
-        <ul class="ulcolor">
+        <ul>
         <li>Microsoft Office, Adobe Acrobat, Google Drive</li>
         <li>3 years of high school Spanish</li>
         <li>18 months of German, at college and self-taught</li>
@@ -42,7 +44,7 @@
     </section>
     <section>
     <h2 class="center">Hard and Soft Skills</h2>
-    <ul class="ulcolor">
+    <ul>
         <li>Project management</li>
         <li>Javascript coding</li>
         <li>Python coding</li>
@@ -59,5 +61,39 @@
         <li>Customer service</li>
         </ul>
     </section>
+    
+<script>
+        
+    var day = true;
+    
+    document.getElementById("modeChanger").addEventListener("click", changeMode);
+    
+    function changeMode(){
+        
+        if (day){
+            
+            document.body.style.backgroundColor = "rgb(13, 0, 66)";
+            
+            
+
+            document.body.style.color = "white";
+            
+            day = false;
+            
+            document.getElementById("modeChanger").src="https://pngimage.net/wp-content/uploads/2018/06/white-sun-png-2.png";
+        }
+        else {
+            document.body.style.backgroundColor = "aliceblue";
+            
+            
+            
+            document.body.style.color = "black";
+            
+            day = true;
+            
+            document.getElementById("modeChanger").src="https://lh3.googleusercontent.com/proxy/3cXPSQ6FMUe0p9rU725YIlgApNrfLJwTJHHd2JMTdTVNgXLpKX91e3T3g5hsSjuYlyRqF9Ki9gJBXWDisvw6MDMFAorc6H-Zk8KaSiPM_arg3B_pgk1Jl6vqZQ9m4q5MqUo4d0TDfmm6AC9F-x2j4-e2pvL9aE6BsBGZWIh0";
+        }
+    }
+    </script>
     </body>
 </html>

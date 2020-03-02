@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <title>DnD API Experiment</title>
+<body>
+<h1>This is a list of the character classes in Dungeons and Dragons.</h1>
+    <ul id="list"></ul>
+</body>
+<script>
+var request = new XMLHttpRequest();
+    
+    request.open('GET', 'http://www.dnd5eapi.co/api/classes');
+    
+    request.onload = function() {
+        var response = request.response;
+        var parsed = JSON.parse(response);
+        console.log(parsed);
+        var classTotal = parsed.count
+                
+        for (i = 0; i < classTotal; i++) { 
+            
+        var name = parsed.results[i].name;    
+        var classes = document.createElement('li');
+        classes.innerHTML = name;
+        document.body.appendChild(classes);
+        
+            
+        };
+        
+        
+        
+        
+    };
+    
+    request.send();
+</script>
+</html>
